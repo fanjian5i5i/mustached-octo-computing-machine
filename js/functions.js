@@ -6,7 +6,7 @@ dojo.require("dijit.layout.ContentPane");
 dojo.require("dojox.layout.FloatingPane"); 
 
 dojo.require("dojo.parser");
-//dojo.require(["dojo/parser","dojo/on", "dojo/dom"]);
+
 
 	var pos = 0;
 	var pos1 = 400;
@@ -39,7 +39,7 @@ dojo.require("dojo.parser");
         document.getElementById("fish2").style.left = horizontal[pos1] + "px";
 		--pos1;
         if (pos1 == 0) {
-			//setTimeout(pos = 200, 50000);
+
             pos1 = 400;
 	}
 	var tim2 = setTimeout(fishSwim1, 20);
@@ -172,7 +172,7 @@ dojo.require("dojo.parser");
             map: map,
             position: new google.maps.LatLng(lat, lng),
           });
-		  //console.log(lat,lng);
+
           google.maps.event.addListener(marker, 'click', function() {
           drawChart(this,inArray);
           });
@@ -184,8 +184,7 @@ dojo.require("dojo.parser");
 		google.maps.event.addListener(map,'click',function(event) {
 		mouseLat = event.latLng.lat();
 		mouseLng = event.latLng.lng();
-		//console.log(mouseLat,mouseLng);
-		
+	
 		var table = "1vSi3EUO-AfDcnLpICxecb__B1nBLGh2JGYNKlpwB"
 		var sqlString = "SELECT * FROM " + table +" WHERE 'Lat' < " + (mouseLat + 1) + " AND 'Lat' > " + (mouseLat - 1) + " AND 'Long' > " + (mouseLng - 1) + " AND 'Long' < " + (mouseLng + 1);
 		var sql = encodeURIComponent(sqlString);
@@ -194,7 +193,7 @@ dojo.require("dojo.parser");
 		
 		query.send(function(response) {
           var dt = response.getDataTable();
-			//console.log(response);
+
           // For each row in the table, create a marker
 		  var categories = new Array();
 		  
