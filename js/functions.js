@@ -67,7 +67,8 @@ dojo.require("dojo.parser");
 					   'vAxis': {title: "Precipitation (mm)"},
 					   'hAxis': {title: "Year"},
 					   'is3D': true,
-					   'displayAnnotations': true
+					   'displayAnnotations': true,
+					   'trendlines': { 0: {} }
 					   //'hAxis': {maxValue: 1987}
 					   };
                        
