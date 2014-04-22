@@ -6,7 +6,48 @@ dojo.require("dijit.layout.ContentPane");
 dojo.require("dojox.layout.FloatingPane"); 
 
 dojo.require("dojo.parser");
+<<<<<<< HEAD
 
+=======
+
+
+	var pos = 0;
+	var pos1 = 400;
+	var horizontal = [];
+	var vertical = [];
+	var fillPosition = 5;
+	var num = 400;
+	
+	for(var i = 0; i < 400; ++i) {
+        horizontal[i] = fillPosition;
+		vertical[i] = fillPosition;
+        fillPosition += 5;
+		
+}
+
+
+	function fishSwim() {
+        document.getElementById("fish1").style.left = horizontal[pos] + "px";
+		document.getElementById("fish1").style.top = vertical[pos] + "px";
+        ++pos;
+        if (pos == num) {
+			
+            pos = 0;
+	}
+	var tim1 = setTimeout(fishSwim, 50);
+	}
+	
+	
+	function fishSwim1() {
+        document.getElementById("fish2").style.left = horizontal[pos1] + "px";
+		--pos1;
+        if (pos1 == 0) {
+
+            pos1 = 400;
+	}
+	var tim2 = setTimeout(fishSwim1, 20);
+	}
+>>>>>>> 3ba2af5e46dc2f7fef9584e59b1891be4cefa13f
 	function drawChart(marker,inArray) {
 		var size = inArray.length;
 		
@@ -30,12 +71,19 @@ dojo.require("dojo.parser");
 					   'legend': 'none',
 					   'vAxis': {title: "Precipitation (mm)"},
 					   'hAxis': {title: "Year"},
+<<<<<<< HEAD
 					  
 					   'displayAnnotations': true,
 					   'pointSize': 5,
 					   'trendlines': { 0: {} },
 					   'hAxis.showTextEvery':2,
 					   'hAxis.gridlines':6
+=======
+					   'is3D': true,
+					   'displayAnnotations': true,
+					   'trendlines': { 0: {} }
+					   //'hAxis': {maxValue: 1987}
+>>>>>>> 3ba2af5e46dc2f7fef9584e59b1891be4cefa13f
 					   };
                        
         var node        = document.createElement('div'),
@@ -153,7 +201,11 @@ dojo.require("dojo.parser");
             map: map,
             position: new google.maps.LatLng(lat, lng),
           });
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 3ba2af5e46dc2f7fef9584e59b1891be4cefa13f
           google.maps.event.addListener(marker, 'click', function() {
           drawChart(this,inArray);
           });
@@ -171,9 +223,13 @@ dojo.require("dojo.parser");
 		google.maps.event.addListener(map,'click',function(event) {
 		mouseLat = event.latLng.lat();
 		mouseLng = event.latLng.lng();
+<<<<<<< HEAD
 		var element=document.getElementById("footer");
 		element.innerHTML=mouseLat+','+mouseLng;
 			
+=======
+	
+>>>>>>> 3ba2af5e46dc2f7fef9584e59b1891be4cefa13f
 		var table = "1vSi3EUO-AfDcnLpICxecb__B1nBLGh2JGYNKlpwB"
 		var sqlString = "SELECT * FROM " + table +" WHERE 'Lat' < " + (mouseLat + 1) + " AND 'Lat' > " + (mouseLat - 1) + " AND 'Long' > " + (mouseLng - 1) + " AND 'Long' < " + (mouseLng + 1);
 		var sql = encodeURIComponent(sqlString);
