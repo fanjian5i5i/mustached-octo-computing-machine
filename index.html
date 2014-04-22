@@ -10,7 +10,7 @@
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
     </script>
 	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <title>Friday's</title> 
+    <title>Global Precipitation</title> 
 
 	<!--Indicate the relative .css file location-->
 	<link rel="stylesheet" href="css/Lab5_Friday.css"/>
@@ -27,7 +27,7 @@
 	<script src="http://code.highcharts.com/modules/exporting.js"></script>
 
 </head>
-<body class="claro" onload="fishSwim();">
+<body class="claro">
 
 	<!--dojo container-->
     <div id="content" 
@@ -43,7 +43,7 @@
 		<div id="header"
            data-dojo-type="dijit.layout.ContentPane" 
            data-dojo-props="region:'top'">
-			WELCOME TO MY BLOODY MAP
+			Global Precipitation Web Mapping Application
 		</div>
 		
 		<!--dojo map container -->
@@ -55,14 +55,12 @@
 		
     </div>
 	
-	<div data-dojo-type="dojox/layout/FloatingPane" data-dojo-props="resizable:false, dockable: false, title: 'World Precipitation Querier'" 
-	style="position:absolute; top:0; left:0; width:410px; height:300px; border-style: groove; border-width: 3px; border-color:red;"
+	<div data-dojo-type="dojox/layout/FloatingPane" data-dojo-props="resizable:false, dockable: false, title: 'Global Precipitation Querier'" 
+	style="position:absolute; top:550px; left:600px; width:600px; height:300px; border-style: groove; border-width: 3px;"
     id="dFloatingPane">
 		<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters:true, liveSplitters:false" id="borderContainerTwo">
 		</div>
 	</div>
-    <p><span id="fish1" style="position:absolute; left:10px; top:100px"><img src="https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/qinglong.gif" /></span></p>
-	<p><span id="fish2" style="position:absolute; left:10px; top:100px"><img src="https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/huangfei.gif" /></span></p>
-
+   
 </body>
 </html>
