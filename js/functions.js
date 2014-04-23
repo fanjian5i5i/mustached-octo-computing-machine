@@ -7,13 +7,13 @@ dojo.require("dojox.layout.FloatingPane");
 dojo.require("dojo.parser");
 
 	var pos = 0;
-	var pos1 = 400;
+	var pos1 = 1200;
 	var horizontal = [];
 	var vertical = [];
 	var fillPosition = 5;
-	var num = 400;
+	var num = 1200;
 	
-	for(var i = 0; i < 400; ++i) {
+	for(var i = 0; i < 1200; ++i) {
         horizontal[i] = fillPosition;
 	vertical[i] = fillPosition;
         fillPosition += 5;
@@ -36,7 +36,7 @@ dojo.require("dojo.parser");
 		--pos1;
         if (pos1 == 0) {
 			//setTimeout(pos = 200, 50000);
-            pos1 = 800;
+            pos1 = 1200;
 	}
 	var tim2 = setTimeout(fishSwim1, 20);
 	}
