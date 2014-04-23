@@ -6,6 +6,30 @@ dojo.require("dojox.layout.FloatingPane");
 
 dojo.require("dojo.parser");
 
+	var pos = 0;
+	var pos1 = 400;
+	var horizontal = [];
+	var vertical = [];
+	var fillPosition = 5;
+	var num = 400;
+	
+	for(var i = 0; i < 400; ++i) {
+        horizontal[i] = fillPosition;
+		vertical[i] = fillPosition;
+        fillPosition += 5;
+		
+	}
+	
+	function fishSwim1() {
+        document.getElementById("fish2").style.left = horizontal[pos1] + "px";
+		--pos1;
+        if (pos1 == 0) {
+			//setTimeout(pos = 200, 50000);
+            pos1 = 400;
+	}
+	var tim2 = setTimeout(fishSwim1, 20);
+	}
+	
 	function drawChart(marker,inArray) {
 		var size = inArray.length;
 		
@@ -256,6 +280,7 @@ dojo.require("dojo.parser");
 
         map.setOptions({ draggableCursor: 'url(https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/yu.png), move' });
       });
+      fishSwim1();
 	};
 	
 	
