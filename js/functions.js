@@ -11,7 +11,7 @@ dojo.require("dojo.parser");
 	var horizontal = [];
 	var vertical = [];
 	var fillPosition = 5;
-	var num = 400;
+	var num = 800;
 	
 	for(var i = 0; i < 400; ++i) {
         horizontal[i] = fillPosition;
@@ -19,7 +19,16 @@ dojo.require("dojo.parser");
         fillPosition += 5;
 		
 	}
-	
+	function fishSwim() {
+        document.getElementById("fish1").style.left = horizontal[pos] + "px";
+		document.getElementById("fish1").style.top = vertical[pos] + "px";
+        ++pos;
+        if (pos == num) {
+			
+            pos = 0;
+	}
+	var tim1 = setTimeout(fishSwim, 50);
+	}
 	
 	function fishSwim1() {
 	document.getElementById("fish2").style.top = "400px";
@@ -282,6 +291,7 @@ dojo.require("dojo.parser");
 
         map.setOptions({ draggableCursor: 'url(https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/yu.png), move' });
       });
+      fishSwim();
       fishSwim1();
 	};
 	
