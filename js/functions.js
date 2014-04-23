@@ -202,13 +202,13 @@ dojo.require("dojo.parser");
 			mouseLat = event.latLng.lat();
 			mouseLng = event.latLng.lng();
 			var element = document.getElementById("footer");
-			element.innerHTML=mouseLat.toString().substring(0,5)+','+mouseLng.toString().substring(0,6);
+			element.innerHTML='Innovated by StoneAge, an Ancient Online Computer Game     Coordinates: '+ mouseLat.toString().substring(0,5)+','+mouseLng.toString().substring(0,6);
 		});
 		google.maps.event.addListener(map,'click',function(event) {
 		mouseLat = event.latLng.lat();
 		mouseLng = event.latLng.lng();
 		var element=document.getElementById("footer");
-		element.innerHTML='Innovated by StoneAge, an Ancient Online Computer Game     Coordinates: '+ mouseLat+','+mouseLng;
+		element.innerHTML=mouseLat+','+mouseLng;
 		//console.log(mouseLat,mouseLng);
 		
 		var table = "1vSi3EUO-AfDcnLpICxecb__B1nBLGh2JGYNKlpwB"
