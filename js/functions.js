@@ -20,6 +20,7 @@ dojo.require("dojo.parser");
 		
 	}
 	
+	document.getElementById("fish2").style.top = "400px";
 	function fishSwim1() {
         document.getElementById("fish2").style.left = horizontal[pos1] + "px";
 		--pos1;
