@@ -11,7 +11,7 @@ dojo.require("dojo.parser");
 	var horizontal = [];
 	var vertical = [];
 	var fillPosition = 5;
-	var num = 400;
+	var num = 800;
 	
 	for(var i = 0; i < 400; ++i) {
         horizontal[i] = fillPosition;
@@ -27,7 +27,7 @@ dojo.require("dojo.parser");
 		--pos1;
         if (pos1 == 0) {
 			//setTimeout(pos = 200, 50000);
-            pos1 = 400;
+            pos1 = 800;
 	}
 	var tim2 = setTimeout(fishSwim1, 20);
 	}
