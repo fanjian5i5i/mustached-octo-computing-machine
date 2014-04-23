@@ -7,15 +7,15 @@ dojo.require("dojox.layout.FloatingPane");
 dojo.require("dojo.parser");
 
 	var pos = 0;
-	var pos1 = 800;
+	var pos1 = 400;
 	var horizontal = [];
 	var vertical = [];
 	var fillPosition = 5;
-	var num = 800;
+	var num = 400;
 	
-	for(var i = 0; i < 800; ++i) {
+	for(var i = 0; i < 400; ++i) {
         horizontal[i] = fillPosition;
-		vertical[i] = fillPosition;
+	vertical[i] = fillPosition;
         fillPosition += 5;
 		
 	}
