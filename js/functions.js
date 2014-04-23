@@ -202,7 +202,7 @@ dojo.require("dojo.parser");
 			mouseLat = event.latLng.lat();
 			mouseLng = event.latLng.lng();
 			var element = document.getElementById("footer");
-			element.innerHTML='Innovated by StoneAge (An Ancient Online Computer Game)Coordinates: '+ mouseLat.toString().substring(0,5)+','+mouseLng.toString().substring(0,6);
+			element.innerHTML='Innovated by StoneAge (An Ancient Online Computer Game) '+' ' + ' ' + 'Coordinates: '+ mouseLat.toString().substring(0,5)+','+mouseLng.toString().substring(0,6);
 		});
 		google.maps.event.addListener(map,'click',function(event) {
 		mouseLat = event.latLng.lat();
