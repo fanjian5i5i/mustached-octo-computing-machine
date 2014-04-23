@@ -11,7 +11,7 @@ dojo.require("dojo.parser");
 	var horizontal = [];
 	var vertical = [];
 	var fillPosition = 5;
-	var num = 800;
+	var num = 400;
 	
 	for(var i = 0; i < 400; ++i) {
         horizontal[i] = fillPosition;
