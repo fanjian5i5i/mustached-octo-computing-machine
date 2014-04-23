@@ -21,13 +21,13 @@ dojo.require("dojo.parser");
 	}
 	function fishSwim() {
         document.getElementById("fish1").style.left = horizontal[pos] + "px";
-		document.getElementById("fish1").style.top = vertical[pos] + "px";
+	document.getElementById("fish1").style.top = vertical[pos] + "px";
         ++pos;
         if (pos == num) {
 			
             pos = 0;
 	}
-	var tim1 = setTimeout(fishSwim, 50);
+	var tim1 = setTimeout(fishSwim, 20);
 	}
 	
 	function fishSwim1() {
