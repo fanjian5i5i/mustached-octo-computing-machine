@@ -27,7 +27,7 @@ dojo.require("dojo.parser");
 			
             pos = 0;
 	}
-	var tim1 = setTimeout(fishSwim, 20);
+	var tim1 = setTimeout(fishSwim, 40);
 	}
 	
 	function fishSwim1() {
