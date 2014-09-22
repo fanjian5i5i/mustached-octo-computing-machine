@@ -292,7 +292,7 @@ dojo.require("dojo.parser");
 		google.maps.event.addListener(map, 'mousemove', function(event) {
 
 
-        map.setOptions({ draggableCursor: 'url(https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/yu.png), move' });
+        map.setOptions({ draggableCursor: 'url(image/cursor.png), move' });
       });
       //fishSwim();
       //fishSwim1();
