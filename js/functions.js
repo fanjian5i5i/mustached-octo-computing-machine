@@ -5,7 +5,7 @@ dojo.require("dijit.layout.ContentPane");
 dojo.require("dojox.layout.FloatingPane"); 
 
 dojo.require("dojo.parser");
-
+/*
 	var pos = 0;
 	var pos1 = 1200;
 	var horizontal = [];
@@ -40,6 +40,7 @@ dojo.require("dojo.parser");
 	}
 	var tim2 = setTimeout(fishSwim1, 20);
 	}
+*/
 	
 	function drawChart(marker,inArray) {
 		var size = inArray.length;
@@ -184,14 +185,16 @@ dojo.require("dojo.parser");
 				
 			}
 			marker = new google.maps.Marker({
-			icon: 'https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/cloud3.gif',
+			icon: 'image/cloud3.gif',
 			animation:true,
             map: map,
             position: new google.maps.LatLng(lat, lng),
           });
 		  //console.log(lat,lng);
-          google.maps.event.addListener(marker, 'click', function() {
-          drawChart(this,inArray);
+          google.maps.event.addListener(marker, 'click', function(result) {
+          	if(result.length>0){drawChart(this,inArray)};
+          	alert("Opps, No data at this location. Please, click somewhere else.");
+          
           });
         };
 		
@@ -222,7 +225,7 @@ dojo.require("dojo.parser");
 			//console.log(response);
           // For each row in the table, create a marker
 		  var categories = new Array();
-		  console.log(dt);
+		  //console.log(dt);
           for (var i = 0; i < dt.getNumberOfRows(); i++) {
 			console.log(i);
 			var infoArray = new Array();
@@ -291,8 +294,8 @@ dojo.require("dojo.parser");
 
         map.setOptions({ draggableCursor: 'url(https://866943e6-a-62cb3a1a-s-sites.googlegroups.com/site/fanjian5i5i/home/yu.png), move' });
       });
-      fishSwim();
-      fishSwim1();
+      //fishSwim();
+      //fishSwim1();
 	};
 	
 	
